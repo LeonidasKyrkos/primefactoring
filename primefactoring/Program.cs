@@ -11,24 +11,24 @@ namespace primefactoring
         static void Main(string[] args)
         {
             List<long> l = new List<long>();
-            long j = 600851475143;
-            long x = 3;
-            long z;
-            long q;
-            l.Add(x);
+            long BigNumber = 600851475143;
+            long Primefactor = 3;
+            long Primecheck;
+            long Primecheck2;
+            l.Add(Primefactor);
 
-            for (long y = 2; y <= x - 1; y++)
-            while(x <= 600851475143)
+            for (long y = 2; y <= Primefactor - 1; y++)
+            while(Primefactor <= BigNumber)
             {
-                z = x % y;
-                x = x + 1;
+                Primecheck = Primefactor % y;
+                Primefactor = Primefactor + 1;
 
-                if (z != 0)
+                if (Primecheck != 0)
                 {
-                    q = j % x;
-                    if (q == 0)
+                    Primecheck2 = BigNumber % Primefactor;
+                    if (Primecheck2 == 0)
                     {
-                        l.Add(x);
+                        l.Add(Primefactor);
                     }
                 }
             }
